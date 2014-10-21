@@ -274,6 +274,10 @@ func (c *Client) SearchIndex() SearchIndex {
 	return SearchIndex{c}
 }
 
+func (c *Client) ViewManager() ViewManager {
+	return ViewManager{c}
+}
+
 func (c *Client) VirtualDiskManager() VirtualDiskManager {
 	return VirtualDiskManager{c}
 }
